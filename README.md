@@ -4,3 +4,4 @@ Welcome to AR7 Coding, where you can find basic codes which are mostly excelled 
 
 Some of the Codes are :
 1. **Simple Calculator 2.0**
+2. Color Mixer (RGB Turtle)
