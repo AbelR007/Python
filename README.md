@@ -1,4 +1,4 @@
-# My Basic PyCodes
+# Basic Python Codes
 
 Basic Codes in Python which are made mostly by me. Feel free to use them or know about them.
 
