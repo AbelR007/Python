@@ -4,9 +4,9 @@ Basic Codes in Python which are made mostly by me. Feel free to use them or know
 
 Some of the Codes are :
 
-- [x] **Simple Calculator 2.0**
-- [ ] Color Mixer (RGB Turtle)
-
+1. **Simple Calculator 2.0**
+2. Python Definitons [Python Examples for Beginners]
+3. Color Mixer (RGB Turtle)
 
 ### Note :
 Bolded ones are made completely by me
