@@ -17,13 +17,15 @@ print("Factorial of a Number\n-------------------")
 fact = 1
 num = int(input("Enter number :"))
 
-if num <= 0 :
+if num <= 0:
+    print("""
+        Please enter a positive number!
+        Factorial doesn't exist for negative numbers.
+    """)
     # Negative numbers don't have a factorial value
-    print("Please enter a positive number! Factorial doesn't exist for negative numbers.")
-else :
-    # Main Logic of the Factorial function
-    for i in range(1,num+1):
+else:
+    for i in range(1, num + 1):
         fact = fact * i
-    print("Factorial of a Number is ",fact)
+    print("Factorial of a Number is ", fact)
 
-#---- CODE by Abel Roy | AbelR007 ----#
+# --- Code by Abel Roy --- #
