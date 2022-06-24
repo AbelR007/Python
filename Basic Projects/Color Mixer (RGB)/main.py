@@ -1,7 +1,7 @@
 #COLOR Mixer [RGB versions]
 #Updated Errors and Bugs
 
-# This Code was not necessarily mine. Many of my friends/sources helped me complete it. 
+# This Code was not necessarily mine. Many of my friends/sources helped me complete it.
 
 from turtle import Screen, Turtle, mainloop
 
@@ -55,8 +55,8 @@ def main():
     writer.write("DRAG!",align="center",font=("Arial",30,("bold","italic")))
     return "EVENTLOOP"
 
+# Main Function run
 if __name__ == "__main__":
     msg = main()
     print(msg)
     mainloop()
-
