@@ -24,7 +24,7 @@ if num <= 0:
     """)
     # Negative numbers don't have a factorial value
 else:
-    for i in range(1, num + 1):
+    while(1, num + 1):
         fact = fact * i
     print("Factorial of a Number is ", fact)
 
