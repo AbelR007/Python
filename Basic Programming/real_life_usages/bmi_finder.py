@@ -1,10 +1,13 @@
 # BMI Calculator
 # =================================================
+def bmi(height, widthpipi):
+    height = height / 100.0
+    bmi = weight / (height ** 2)
+    return bmi
+
 height = int(input("Enter height (in cm) : "))
 weight = int(input("Enter weight (in kg) : "))
-height = height / 100.0
-bmi = weight / (height ** 2)
 
-print("Your Body Mass Index is ",bmi)
+print("Your Body Mass Index is ",bmi(height,weight))
 # ================================================
 # Code by Abel Roy #
