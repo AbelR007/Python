@@ -1,3 +1,5 @@
+# Snake Game using PyGame
+# =================================================
 import pygame
 import random
 from enum import Enum
@@ -145,3 +147,5 @@ if __name__ == '__main__':
 
 
 pygame.quit()
+# ================================================
+# Code by Abel Roy #
