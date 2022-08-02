@@ -34,13 +34,17 @@ class Game:
             self.button.configure(text=current_ch,bg="snow",fg="black")
             self.value = current_ch
             matrix[self.x-1][self.y-1] = self.value
-            # print(">",matrix)
+            print(">",matrix)
             if current_ch == "X":
                 current_ch = "O"
             else:# current_ch == "O":
                 current_ch = "X"
             status.configure(text=f"< {current_ch}'s Turn >")
         check_win(matrix)
+
+    def reset_matrix(self):
+        self.button.configure(text="",bg="lightgray")
+        self.value=None
 
 possibliity = (
     ((0,0),(1,1),(2,2)),
@@ -104,14 +108,28 @@ def game_over(matrix, result):
         print("DRAW")
         return
 
+# Game RUN
 for x in range(1,4):
     for y in range(1,4):
         objects.append(Game(x,y))
         # print(matrix)
+# ^^^ Important
 
+# Disables the Buttons in the Game UI
 def disable_game():
     for x in objects:
         x.button.configure(state=tk.DISABLED)
+    play_again_button.pack()
+
+def play_again():
+    global current_ch
+    current_ch = "X"
+    for x in objects:
+        x.button.configure(state=tk.NORMAL)
+        x.reset_matrix()
+    global matrix
+    matrix = [[0]*3 for _ in range(3)]
+play_again_button = tk.Button(root, text="Play Again?", font= the_font,command=play_again)
 
 area.pack(padx=10, pady=10)
 footer = tk.Label(root, text=" <> by Abel Roy",font=the_font, bg="snow", fg="grey")
