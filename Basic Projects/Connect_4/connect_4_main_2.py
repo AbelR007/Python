@@ -115,12 +115,12 @@ class Drop_Area:
                     return True
 
         # Backslash Diagonal Check
-        for i in range(len(board)-3):
-            for j in range(3,len(board[i])):
-                # print(i,j,board[i][j])
-                if board[i][j] == board[i-1][j+1] == board[i-2][j+2] == board[i-3][j+3] == player:
-                    self.game_over(player)
-                    return True
+        # for i in range(len(board)-3):
+        #     for j in range(3,len(board[i])):
+        #         # print(i,j,board[i][j])
+        #         if board[i][j] == board[i-1][j+1] == board[i-2][j+2] == board[i-3][j+3] == player:
+        #             self.game_over(player)
+        #             return True
 
     def game_over(self, player):
         print("Game Over")

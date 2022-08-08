@@ -30,12 +30,12 @@ def vertical_check(board,turn):
 
 turns = "X"
 def game(board,turns):
-    arr = np.array(board)
     arr[5][3] = "U"
     arr[5][4] = "D"
     arr[5][5] = "X"
     arr[5][6] = "X"
     print(arr)
+    arr = np.array(board)
     arr = np.transpose(np.flip(arr,0))
     print(arr[4])
     # for x in range(len(board)):
