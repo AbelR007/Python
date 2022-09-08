@@ -1,13 +1,24 @@
 # Bubble Sort in Python
 # =================================================
-lis = [5,2,4,2,1]
+import random
 
-print(lis)
-for i in range(1,len(lis)):
-    if lis[i] < lis[i-1]:
-        # print("hmm")
-        list[i],list[i-1] = list[i-1],list[i]
-print(lis)
+def adding_elements_to_list(arr):
+    for j in range(5):
+        x = random.randint(1,50)
+        arr.append(x)
+    return arr
 
+def bubble_sort(arr):
+    l = len(arr)
+    for i in range(l):
+        for j in range(l):
+            if arr[i] < arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
+
+arr = []
+arr = adding_elements_to_list(arr)
+print("Array before Bubble Sort : ",arr)
+bubble_sort(arr)
+print("Array after Bubble Sort : ",arr)
 # ================================================
 # Code by Abel Roy #
