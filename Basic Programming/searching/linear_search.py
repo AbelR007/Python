@@ -3,7 +3,7 @@
 # Variables Defined
 li = []
 pos = 0
-found = 0
+found = False
 
 # List Input
 length = int(input("Enter length of list : "))
@@ -13,19 +13,19 @@ for i in range(length):
     li.append(a)
 
 # Input
-x = int(input("Enter element to be searched : "))
+element = int(input("Enter element to be searched : "))
 
 # MAIN LOGIC
 # Loop to run through the list of items
-for i in range(len(li)):
-    if li[i] == x:
-        found = 1
-        pos = i
+for i in li:
+    if i == element:
+        found = True
+        pos = li.index(i) + 1
         break
 
-if found == 1:
-    print(f"{x} found at position {pos}")
+if found:
+    print(f"{element} found at position {pos}")
 else:
-    print(f"{x} not found!")
+    print(f"{element} not found!")
 # ================================================
 # Code by Abel Roy #
