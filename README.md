@@ -6,7 +6,7 @@ Learn the Basics is a initative to help others learn or revisit fundamental prog
 It inculcates many concepts including help to other libraries as well.
 
 *Forgot Python? Do you want to know about certain python definitions and meanings ?*
-Check them out here where I post python codes that might be useful to others
+Check them out [here](https://github.com/AbelR007/Python/tree/master/Basic%20Programming) where I post python codes that might be useful to others
 **If you want a program for any problem, you can create an issue or dm me on discord**
 
 ## Repository Divisions
