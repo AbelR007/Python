@@ -81,7 +81,7 @@ def Actual_Solution(arr, k):
     for i in range(0, N):
     	Sum += arr[i]
     R = (k * k + k + 1)
-    if (Sum % R != 0):
+    if (Sum % R !=  0):
     	return 0
     Mid = k * (Sum // R)
     for i in range(1, N-1):
